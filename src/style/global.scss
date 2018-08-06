@@ -1,0 +1,90 @@
+@import "./variate.scss";
+.is-content-block{
+  padding: 20px;
+  box-shadow: 0 0 1px 0 rgba(0,0,0,.2);
+  background: #fff;
+  min-height: 500px;
+  .title{
+    h3{
+      font-size: 18px;
+      font-weight: normal;
+      margin-bottom: 20px;
+      @extend .text-color-primary;
+    }
+  }
+}
+.is-module{
+  width: 100%;
+  @extend .border-one;
+  .is-module-title{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 15px;
+    background: #ededed;
+    @extend .text-color-primary;
+  }
+  .is-module-content{}
+}
+
+
+.text-strong{
+  font-weight: bold;
+}
+.text-color-common{
+  color: #606266;
+}
+.text-color-primary{
+  color: #303133;
+}
+.text-color-minor{
+  color: $gray;
+}
+.text-color-placeholder{
+  color: #C0C4CC;
+}
+.color-red{
+  color: $red;
+}
+.color-green{
+  color: $green;
+}
+.color-gray{
+  color: $gray;
+}
+.color-blue{
+  color: $blue;
+}
+.border-one{
+  border: 1px solid $border-color-one;
+}
+.border-one-left{
+  border-left: 1px solid $border-color-one;
+}
+.border-one-right{
+  border-right: 1px solid $border-color-one;
+}
+.border-one-top{
+  border-top: 1px solid $border-color-one;
+}
+.border-one-bottom{
+  border-bottom: 1px solid $border-color-one;
+}
+.border-two{
+  border: 1px solid #E4E7ED;
+}
+.border-three{
+  border: 1px solid #EBEEF5;
+}
+.text-center{
+  text-align: center;
+}
+.padding-15{
+  padding: 15px;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.font-weight-normal{
+  font-weight: normal;
+}

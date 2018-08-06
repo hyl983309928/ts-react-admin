@@ -1,0 +1,103 @@
+@import "../../style/global.scss";
+.page-header{
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1024;
+  background: #545C64;
+  border-bottom: 1px solid $border-color-one;
+  display: flex;
+  color: #fff;
+  padding: 0 50px;
+  .header-logo{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    img{
+      width: 35px;
+      height: 35px;
+      margin-right: 15px;
+      border-radius: 50% 50%;
+      overflow: hidden;
+    }
+    span{
+      display: inline-block;
+      color: #fff;
+      font-size: 18px;
+    }
+  }
+  .header-user{
+    flex-grow: 0;
+    line-height: 50px;
+    cursor: pointer;
+    .header-user-label{
+      color: #fff;
+      span{
+        display: inline-block;
+        line-height: 50px;
+      }
+    }
+  }
+}
+.content-dialog{
+  width: 400px;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  padding: 20px;
+  box-shadow: 0 0 1px 0 rgba(0,0,0,.2);
+  background: #fff;
+}
+.login-box{
+  .login-label{
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .login-btn{
+    width: 100%;
+  }
+  .login-registering-and-forget-password{
+    .login-registering{
+    }
+    .login-forget-password{
+      cursor: pointer;
+      float: right;
+      &:hover{
+        @extend .text-color-primary;
+      }
+    }
+  }
+}
+.register-box{
+  .register-label{
+    margin-bottom: 20px;
+    font-size: 16px;
+    @extend .text-color-primary;
+  }
+  .verification-btn{
+    width: 100%;
+  }
+  .register-btn-box{
+    .register-btn{
+      width: 100%;
+    }
+  }
+}
+.find-password{
+  .find-password-label{
+    margin-bottom: 20px;
+    font-size: 16px;
+    @extend .text-color-primary;
+  }
+  .verification-btn{
+    width: 100%;
+  }
+  .find-password-btn-box{
+    .find-password-btn{
+      width: 100%;
+    }
+  }
+}

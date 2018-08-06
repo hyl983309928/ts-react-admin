@@ -1,0 +1,100 @@
+@import "./variate.scss";
+
+.basic-error-label{
+  color: $red;
+  font-size: 12px;
+  line-height: 1;
+  padding-top: 10px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.layout-aside{
+  position: fixed;
+  top: 0px;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  z-index: 1025;
+  background: #001529;
+  overflow-y: auto;
+  color: rgb(191, 203, 217);
+  transition: 0.3s all;
+  .layout-aside-logo{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    padding: 30px 0;
+    justify-content: center;
+    img{
+      width: 55px;
+      height: 55px;
+      margin-bottom: 20px;
+      border-radius: 50% 50%;
+      overflow: hidden;
+    }
+    span{
+      display: inline-block;
+      color: #fff;
+      font-size: 18px;
+      font-weight: normal;
+    }
+  }
+  .layout-aside-logo-small{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    img{
+      width: 60%;
+      border-radius: 50% 50%;
+    }
+  }
+}
+.layout-footer{
+  min-width: 1000px;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  z-index: 1021;
+  margin-left: 200px;
+}
+.layout-header{
+  min-width: 1000px;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 200px;
+  right: 0;
+  z-index: 1024;
+  background: #fff;
+  display: flex;
+  padding: 0 50px 0 10px;
+  transition: 0.3s all;
+  .layout-header-breadcrumb{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+  .layout-header-user{
+    display: flex;
+    align-items: center;
+  }
+}
+.layout-main{
+  min-width: 1000px;
+  transition: 0.3s margin-left;
+  overflow: hidden;
+  margin-left: 200px;
+  padding-top: 50px;
+  display: block;
+  z-index: 1022;
+}
+.layout-footer{
+  min-width: 1000px;
+  transition: 0.3s margin-left;
+}
